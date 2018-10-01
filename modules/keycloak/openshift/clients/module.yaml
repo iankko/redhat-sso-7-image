@@ -5,6 +5,17 @@ description: Package to add Red Hat Single Sign-On / Keycloak client adapters fo
 execute:
 - script: install
 
-#artifacts:
+artifacts:
   # Set by the pipeline, consists of the adapter zips, renamed to
-  # keycloak-*-adapter.zip
+  - path: keycloak-eap6-adapter.zip
+    sha256: 994d371dc951c1c6367ca8b5996ec3e7b4ba201a445bde7e92217e18708c2dfa
+  - path: keycloak-fuse-adapter.zip
+    sha256: 77fe12b3505c229494920415fbef25b3aa40757fcac262c8a554b9a1bf0bd951
+  - path: keycloak-js-adapter.zip
+    sha256: a67321df82f84b241739f6e30ed6bfbafd97e9043e725d53d1c1918a66019e13
+  - path: keycloak-saml-eap7-adapter.zip
+    sha256: 00c23154d167b847e2e9782a2a7ac2b9dc2b2c066395f16b74bb2a30313d184e
+  - path: keycloak-saml-eap6-adapter.zip
+    sha256: db830fb0ae5d3e97a81aaea41a58f832793e230b138dadf25ccf48b01c7a3b63
+  - path: keycloak-eap7-adapter.zip
+    sha256: 6489a37a2d6491b0c9267c7fb7772eb0918f549601292f5d49c2f5841ff43e3a

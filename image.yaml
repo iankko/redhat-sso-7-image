@@ -2,7 +2,7 @@ schema_version: 1
 
 name: "redhat-sso-7-tech-preview/sso-cd"
 description: "Red Hat Single Sign-On 7.3 continuous delivery container image rebuilt on top of the EAP CD 13.0-8 image"
-version: "7.3.0.CD03-on-top-of-EAP-CD-13"
+version: "7.3.0.cd03-on-top-of-eap-cd-13"
 from: "jboss-eap-7/eap-cd:13.0"
 labels:
     - name: "com.redhat.component"
@@ -27,9 +27,9 @@ modules:
           - name: sso
           - name: keycloak.openshift.clients
 artifacts:
-      # keycloak-server-overlay-4.0.0.Beta3-redhat-2.zip
+      # keycloak-server-overlay-4.3.0.Final-redhat-00002.zip
     - path: keycloak-server-overlay.zip
-      md5: 5dde7dcb52e76bb1373cbaa020328d4c
+      sha256: 46083eb73f17f9cad652f9e0d33664643cff24fb6eb7e9d4512da1319ceb9efb
 run:
       user: 185
       cmd:
