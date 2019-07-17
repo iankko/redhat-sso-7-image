@@ -58,4 +58,4 @@ run:
 osbs:
       repository:
             name: containers/redhat-sso-7
-            branch: jb-sso-cd-rhel-7
+            branch: jb-sso-cd-rhel-8
