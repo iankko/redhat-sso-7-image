@@ -5,7 +5,7 @@ description: "Red Hat Single Sign-On Continuous Delivery container image, based 
 version: "6"
 # Strictly stick to 'ubi8-minimal:8.0-131' rather than using 'ubi8-minimal:latest'
 # till RH BZ#1725863 is addressed
-from: "ubi8-minimal:8.0-131"
+from: "ubi8:8-released"
 labels:
     - name: "com.redhat.component"
       value: "redhat-sso-cd-rhel8-container"
@@ -23,7 +23,7 @@ envs:
     - name: "PRODUCT_VERSION"
       value: "6"
 packages:
-      manager: microdnf
+      manager: dnf
       content_sets:
             x86_64:
                 - rhel-8-for-x86_64-baseos-rpms
